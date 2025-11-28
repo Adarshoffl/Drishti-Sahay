@@ -1,0 +1,355 @@
+.head {
+    /* font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+     text-shadow: 4px 4px 0px #b8bfffd8;
+    color: #263fe3;
+     font-family: "Times New Roman", serif;
+     background: linear-gradient(90deg, #4158d0, #c850c0, #ffcc70);
+    -webkit-background-clip: text; */
+ font-size: 46px;
+    letter-spacing: 3px;
+    font-weight: 700;
+    color: #0af;
+    text-transform: uppercase;
+    text-shadow: 3px 2px 0px #050505d8;
+     background: linear-gradient(90deg, hsla(0, 0%, 98%, 0.646), #1677ffaf);
+    text-align: center;
+    /* color: transparent; */
+    
+}
+
+.rectangle {
+    width: 1000px;
+    height: 300px;
+    text-align: center;
+    background-color: #79adf5;
+    border: 2px solid #006fd0;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+
+/* BUTTONS */
+
+.red {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: red;
+    width: 100px;
+    height: 50px;
+    margin: 10px 15px 10px 15px;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+.red:hover
+ {
+    transform: scale(1.1);
+    background-color: rgb(212, 4, 4);
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.red:active{
+    transform: scale(0.9);
+}
+
+
+
+.green {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: green;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+}
+
+.green:hover {
+    transform: scale(1.1);
+    background-color: darkgreen;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6) ;
+    
+}
+
+.green:active {
+    transform: scale(0.9);
+}
+
+
+.blue {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: blue;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.blue:hover {
+    transform: scale(1.1);
+    background-color: darkblue;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.blue:active {
+    transform: scale(0.9);
+}
+
+.yellow {
+    transition: all 0.3s ease-in;
+    color: rgb(10, 9, 9);
+    background-color: yellow;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.yellow:hover {
+    transform: scale(1.1);
+    background-color: gold;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.yellow:active {
+    transform: scale(0.9);
+}
+
+.purple {
+
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: purple;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.purple:hover {
+    transform: scale(1.1);
+    background-color: indigo;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.purple:active {
+    transform: scale(0.9);
+}
+
+.orange {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: orange;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.orange:hover {
+    transform: scale(1.1);
+    background-color: darkorange;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.orange:active {
+    transform: scale(0.9);
+}
+
+.pink {
+    transition: all 0.3s ease-in;
+    color: rgb(10, 9, 9);
+    background-color: pink;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.pink:hover {
+    transition: all 0.3s ease-in;
+    transform: scale(1.1);
+    background-color: deeppink;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.pink:active {
+    transform: scale(0.9);
+}
+
+.grey {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: grey;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.grey:hover {
+    transform: scale(1.1);
+    background-color: darkgrey;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.grey:active {
+    transform: scale(0.9);
+}
+
+.black {
+    transition: all 0.3s ease-in;
+    color: aliceblue;
+    background-color: black;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.black:hover {
+    transform: scale(1.1);
+    background-color: dimgray;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+
+.black:active {
+    transform: scale(0.9);
+}
+
+.white {
+    transition: all 0.3s ease-in;
+    color: rgb(10, 9, 9);
+    background-color: white;
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.6);
+    width: 100px;
+    height: 50px;
+    border-radius: 8px;
+    margin: 10px 15px 10px 15px;
+
+}
+
+.white:hover {
+    transform: scale(1.1);
+    background-color: lightgray;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+    
+}
+.white:active {
+    transform: scale(0.9);
+}
+
+
+
+/* png */
+#openPopup {
+     
+    width: 30px;
+    height: auto;
+    cursor: pointer;
+   margin-left: 1230px;
+}
+
+#openPopup:active,
+#openPopup:hover {
+    transform: scale(1.1);
+    background-color: rgb(45, 58, 248);
+    transform: scale(0.9);
+}
+
+/* Background overlay */
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(3px);
+    z-index: 90;
+}
+
+/* Popup wrapper */
+#popupBox {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid #4050ff;
+    width: 350px;
+    z-index: 100;
+}
+
+/* Close button */
+#closePopup {
+    float: right;
+    background: red;
+    color: #fff;
+    padding: 5px 10px;
+    margin-top:  3px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+/* Your existing CSS kept SAME */
+.editor-box {
+    width: 320px;
+    padding: 15px;
+    background: #e7ebff;
+    border-radius: 10px;
+    border: 2px solid #4050ff;
+}
+
+
+.key-input {
+    width: 50px;
+    text-align:center;
+    float: right;
+    margin-left: 10px;
+}
+
+#save {
+    transition: all 0.3s ease-in;
+    background-color: rgb(125, 133, 240);
+    width: 150px;
+    height: 50px;
+    border-radius: 8px;
+    margin-top: 15px;
+    color: white;
+}
+
+#save:hover {
+    transform: scale(1.1);
+    background-color: rgb(45, 58, 248);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+}
+
+#save:active {
+    transform: scale(0.9);
+}

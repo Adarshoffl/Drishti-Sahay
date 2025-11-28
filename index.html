@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drishti-Sahay</title>
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+
+<body style="background-color: rgb(224, 233, 249);">
+
+    <img src="shortcuts.png" id="openPopup" alt="Edit Shortcuts" title="Edit Shortcuts">
+
+    <h1 class="head">👁️-Drishti-Sahay</h1>
+
+    <div class="rectangle">
+        <div>
+            <p> NOTE:-This project provides an accessibility tool that allows visually impaired users to change website
+                background colors for better readability and comfort. By using simple buttons and keyboard shortcuts, it
+                makes navigating and viewing content much easier for low-vision users.</p>
+            <button class="red">RED</button>
+            <button class="green">GREEN</button>
+            <button class="blue">BLUE</button>
+            <button class="yellow">YELLOW</button>
+        </div>
+        <div>
+            <button class="purple">PURPLE</button>
+            <button class="orange">ORANGE</button>
+            <button class="pink">PINK</button>
+            <button class="grey">GREY</button>
+        </div>
+        <div>
+            <button class="black">BLACK</button>
+            <button class="white">WHITE/reset</button>
+        </div>
+
+
+    </div>
+
+
+    <!-- Dark overlay -->
+    <div id="overlay"></div>
+
+    <!-- Popup Box -->
+    <div id="popupBox">
+
+        <span id="closePopup">X</span>
+
+        <!-- YOUR ORIGINAL SHORTCUT EDITOR BOX (UNCHANGED) -->
+        <div class="editor-box">
+            <h2>Edit Shortcut Keys</h2>
+
+            <label>Red:
+                <input class="key-input" data-color="red" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Green:
+                <input class="key-input" data-color="green" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Blue:
+                <input class="key-input" data-color="blue" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Yellow:
+                <input class="key-input" data-color="yellow" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Purple:
+                <input class="key-input" data-color="purple" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Orange:
+                <input class="key-input" data-color="orange" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Pink:
+                <input class="key-input" data-color="pink" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Grey:
+                <input class="key-input" data-color="grey" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>Black:
+                <input class="key-input" data-color="black" type="text" maxlength="1">
+            </label><br><br>
+
+            <label>White (Reset):
+                <input class="key-input" data-color="white" type="text" maxlength="1">
+            </label><br><br>
+
+            <button id="save" onclick="saveShortcuts()">Save Shortcuts</button>
+        </div>
+
+    </div>
+
+
+
+
+
+</body>
+<script src="content.js"></script>
+
+</html>
