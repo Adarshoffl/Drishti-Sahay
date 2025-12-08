@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="Styles.css">
+</head>
+<body>
+    <div class="editor-box">
+        <div class="header">Shortcut Settings</div>
+        <div class="desc">
+            Toggle Capture Mode, **TAB or click** an element, then press **ALT + Key** to assign.
+            <br>To trigger the shortcut, press **CTRL + SHIFT + Key**.
+        </div>
+        <button id="captureToggle" class="capture-btn inactive">Start Capture Mode</button>
+        <div class="label-row">
+             <span>Element Selector</span>
+             <span>Key (A-Z, 0-9)</span>
+        </div>
+        <div id="shortcutList"></div>
+        <button id="addRow" class="action-btn"> + Add Shortcut Row</button>
+        <div class="button-group">
+            <button id="save" class="action-btn save-btn">Save Shortcuts</button>
+            <button id="reset" class="action-btn reset-btn">Delete ALL</button>
+        </div>
+        <div id="announce" class="status-area">Status: Loading...</div>
+    </div>
+<script src="popup.js"></script>
+</body>
+</html>

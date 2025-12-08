@@ -1,15 +1,30 @@
 {
   "manifest_version": 3,
-  "name": "Background Color Shortcut Helper",
+  "name": "Accessible Shortcuts",
   "version": "1.0",
-  "description": "Change webpage background colors using keyboard shortcuts.",
-  
-  "permissions": ["scripting"],
-  
+  "description": "Assign keyboard shortcuts to any element on a webpage.",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
   "content_scripts": [
     {
-      "matches": ["<all_urls>"],
-      "js": ["content.js"]
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "Styles.css"
+      ]
     }
   ]
 }
