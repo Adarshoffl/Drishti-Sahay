@@ -3,6 +3,7 @@
   "name": "Accessible Shortcuts",
   "version": "1.0",
   "description": "Assign keyboard shortcuts to any element on a webpage.",
+  
   "permissions": [
     "activeTab",
     "storage",

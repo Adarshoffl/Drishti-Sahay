@@ -7,16 +7,16 @@
      font-family: "Times New Roman", serif;
      background: linear-gradient(90deg, #4158d0, #c850c0, #ffcc70);
     -webkit-background-clip: text; */
- font-size: 46px;
+    font-size: 46px;
     letter-spacing: 3px;
     font-weight: 700;
     color: #0af;
     text-transform: uppercase;
     text-shadow: 3px 2px 0px #050505d8;
-     background: linear-gradient(90deg, hsla(0, 0%, 98%, 0.646), #1677ffaf);
+    background: linear-gradient(90deg, hsla(0, 0%, 98%, 0.646), #1677ffaf);
     text-align: center;
     /* color: transparent; */
-    
+
 }
 
 .rectangle {
@@ -45,14 +45,14 @@
 
 }
 
-.red:hover
- {
+.red:hover {
     transform: scale(1.1);
     background-color: rgb(212, 4, 4);
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
-.red:active{
+
+.red:active {
     transform: scale(0.9);
 }
 
@@ -72,8 +72,8 @@
 .green:hover {
     transform: scale(1.1);
     background-color: darkgreen;
-    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6) ;
-    
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
+
 }
 
 .green:active {
@@ -97,8 +97,9 @@
     transform: scale(1.1);
     background-color: darkblue;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .blue:active {
     transform: scale(0.9);
 }
@@ -119,8 +120,9 @@
     transform: scale(1.1);
     background-color: gold;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .yellow:active {
     transform: scale(0.9);
 }
@@ -142,8 +144,9 @@
     transform: scale(1.1);
     background-color: indigo;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .purple:active {
     transform: scale(0.9);
 }
@@ -164,8 +167,9 @@
     transform: scale(1.1);
     background-color: darkorange;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .orange:active {
     transform: scale(0.9);
 }
@@ -187,8 +191,9 @@
     transform: scale(1.1);
     background-color: deeppink;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .pink:active {
     transform: scale(0.9);
 }
@@ -209,8 +214,9 @@
     transform: scale(1.1);
     background-color: darkgrey;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .grey:active {
     transform: scale(0.9);
 }
@@ -231,7 +237,7 @@
     transform: scale(1.1);
     background-color: dimgray;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
 
 .black:active {
@@ -254,12 +260,14 @@
     transform: scale(1.1);
     background-color: lightgray;
     box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.6);
-    
+
 }
+
 .white:active {
     transform: scale(0.9);
 }
-/* General Body and Container Styles */
+
+/* --- YOUR ORIGINAL UI STYLES --- */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -409,10 +417,107 @@ body {
     color: #004d80;
 }
 
-/* SHARED HIGHLIGHT STYLE */
+/* General Highlight */
 .highlight {
-    outline: 4px solid #007bff !important;
-    box-shadow: 0 0 10px rgba(0, 123, 255, 0.8) !important;
-    transition: outline 0.1s;
-    z-index: 999999;
+    outline: 4px solid #ffeb3b !important;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8) !important;
+    z-index: 2147483647;
+    cursor: crosshair !important;
+}
+
+/* --- NEW FEATURE: HELP POPUP (Ctrl + 1) --- */
+.help-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.85);
+    z-index: 2147483647;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.help-overlay.visible {
+    display: flex;
+}
+
+.help-box {
+    background: #fff;
+    width: 500px;
+    max-height: 80vh;
+    border-radius: 12px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.help-header {
+    background: #007bff;
+    color: white;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.help-close {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.help-content {
+    padding: 0;
+    overflow-y: auto;
+}
+
+/* Table Styles inside Modal */
+.help-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.help-table th {
+    background: #f8f9fa;
+    text-align: left;
+    padding: 12px 20px;
+    border-bottom: 2px solid #eee;
+    color: #555;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.help-table td {
+    padding: 12px 20px;
+    border-bottom: 1px solid #eee;
+    font-size: 15px;
+    color: #333;
+}
+
+.badge-key {
+    background: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 4px 10px;
+    font-family: monospace;
+    font-weight: bold;
+    color: #333;
+    display: inline-block;
+    text-align: center;
+}
+
+.empty-msg {
+    padding: 30px;
+    text-align: center;
+    color: #777;
+    font-style: italic;
 }
