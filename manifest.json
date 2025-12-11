@@ -1,9 +1,8 @@
 {
   "manifest_version": 3,
-  "name": "Accessible Shortcuts",
+  "name": "Drishti Sahay",
   "version": "1.0",
   "description": "Assign keyboard shortcuts to any element on a webpage.",
-  
   "permissions": [
     "activeTab",
     "storage",

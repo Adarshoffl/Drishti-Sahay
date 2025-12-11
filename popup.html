@@ -1,29 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="Styles.css">
+    <meta charset="UTF-8">
+    <style>
+        /* Language Dropdown Style */
+        .lang-select {
+            float: right;
+            height: 30px;
+            padding: 5px 7px;
+            font-size: 12px;
+            border-radius: 4px;
+            border: 1px solid #ccc;
+            background: #fff;
+            cursor: pointer;
+
+        }
+
+    </style>
 </head>
+
 <body>
     <div class="editor-box">
-        <div class="header">Shortcut Settings</div>
-        <div class="desc">
-            Toggle Capture Mode, **TAB or click** an element, then press **ALT + S** to assign.
-            <br>To trigger, press **CTRL + SHIFT + Key**.
-            <br>Press **CTRL + 1** on page for Help.
+        <div class="header">
+            <span data-i18n="headerTitle">Shortcut Settings</span>
+            <select id="languageSelector" class="lang-select">
+                 <option class="Language" value="lan">Languages</option>
+                <option class="English" value="en">English</option>
+                <option class="hindi" value="hi">हिंदी (Hindi)</option>
+                <option class="Marathi" value="mr">मराठी (Marathi)</option>
+                <option class="Telugu" value="te">తెలుగు (Telugu)</option>
+            </select>
         </div>
-        <button id="captureToggle" class="capture-btn inactive">Start Capture Mode</button>
+
+        <div class="desc" data-i18n="instructions">
+            Toggle Capture Mode, <b>TAB or click</b> an element, then press <b>ALT + S</b> to assign.
+            <br>Trigger: <b>CTRL + SHIFT + Key</b>.
+            <br><b>CTRL + 1</b> for Help.
+        </div>
+
+        <button id="captureToggle" class="capture-btn inactive" data-i18n="startCapture">Start Capture Mode</button>
+
         <div class="label-row">
-             <span>Element Selector</span>
-             <span>Key (A-Z, 0-9)</span>
+            <span data-i18n="colSelector">Element Selector</span>
+            <span data-i18n="colKey">Key (A-Z, 0-9)</span>
         </div>
+
         <div id="shortcutList"></div>
-        <button id="addRow" class="action-btn"> + Add Shortcut Row</button>
+
+        <button id="addRow" class="action-btn" data-i18n="addRow">+ Add Shortcut Row</button>
+
         <div class="button-group">
-            <button id="save" class="action-btn save-btn">Save Shortcuts</button>
-            <button id="reset" class="action-btn reset-btn">Delete ALL</button>
+            <button id="save" class="action-btn save-btn" data-i18n="saveBtn">Save Shortcuts</button>
+            <button id="reset" class="action-btn reset-btn" data-i18n="resetBtn">Delete ALL</button>
         </div>
-        <div id="announce" class="status-area">Status: Loading...</div>
+
+        <div id="announce" class="status-area" data-i18n="statusLoading">Status: Loading...</div>
     </div>
-<script src="popup.js"></script>
+    <script src="popup.js"></script>
 </body>
+
 </html>
