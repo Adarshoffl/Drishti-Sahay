@@ -100,9 +100,14 @@ A shortcut set for amazon.com is stored separately from google.com.
 
 This prevents accidental clicks when switching tabs.
 
-*File	     *Role
+*File	& its Role
+
 content.js	-The Core. Handles key listeners, TTS (Speech), Element detection, and Help Popup injection.
+
 Styles.css	-The Look. Defines the high-contrast yellow focus ring and the dark-mode Help overlay.
+
 popup.html	-The Manager. A visual menu to view or reset shortcuts for the current site.
-popup.js	-The Logic. Loads saved shortcuts into the popup menu and handles "Reset" functionality.
+
+popup.js	   -The Logic. Loads saved shortcuts into the popup menu and handles "Reset" functionality.
+
 manifest.json	-The Config. Declares permissions (activeTab, storage, scripting).
