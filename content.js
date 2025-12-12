@@ -1,4 +1,4 @@
-// content.js - V9.0: RECORD MODE + ROBUST FINGERPRINTING + NVDA PRIORITY
+// content.js - V5.0: RECORD MODE + ROBUST FINGERPRINTING + NVDA PRIORITY
 
 const STORAGE_KEY = 'accessibleShortcutsMap_V4';
 const STATE_KEY = 'isCaptureModeActive';
